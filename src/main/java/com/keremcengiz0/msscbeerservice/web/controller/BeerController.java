@@ -1,7 +1,6 @@
 package com.keremcengiz0.msscbeerservice.web.controller;
 
 import com.keremcengiz0.msscbeerservice.web.model.BeerDto;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,12 +18,11 @@ public class BeerController {
 
     @PostMapping
     public ResponseEntity saveNewBeer(@RequestBody BeerDto beerDto) {
-
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @PutMapping("/{beerId}")
-    public ResponseEntity handleUpdate(@PathVariable(name = "beerId") UUID beerId, @RequestBody BeerDto beerDto) {
+    public ResponseEntity updateBeerById(@PathVariable(name = "beerId") UUID beerId, @RequestBody BeerDto beerDto) {
         return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
 
