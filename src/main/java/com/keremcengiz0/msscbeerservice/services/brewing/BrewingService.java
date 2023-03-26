@@ -1,4 +1,4 @@
-package com.keremcengiz0.msscbeerservice.services;
+package com.keremcengiz0.msscbeerservice.services.brewing;
 
 import com.keremcengiz0.msscbeerservice.config.JmsConfig;
 import com.keremcengiz0.msscbeerservice.domain.Beer;
