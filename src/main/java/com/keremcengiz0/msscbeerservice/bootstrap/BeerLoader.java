@@ -1,10 +1,13 @@
 package com.keremcengiz0.msscbeerservice.bootstrap;
 
+import com.keremcengiz0.msscbeerservice.domain.Beer;
 import com.keremcengiz0.msscbeerservice.repositories.BeerRepository;
+import com.keremcengiz0.msscbeerservice.web.model.BeerStyleEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 @Component
@@ -29,6 +32,37 @@ public class BeerLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        loadBeerObjects();
+    }
 
+    private void loadBeerObjects() {
+        if (beerRepository.count() == 0) {
+            beerRepository.save(Beer.builder()
+                    .beerName("Mango Bobs")
+                    .beerStyle(BeerStyleEnum.IPA.name())
+                    .minOnHand(12)
+                    .quantityToBrew(200)
+                    .price(new BigDecimal("12.95"))
+                    .upc(BEER_1_UPC)
+                    .build());
+
+            beerRepository.save(Beer.builder()
+                    .beerName("Galaxy Cat")
+                    .beerStyle(BeerStyleEnum.PALE_ALE.name())
+                    .minOnHand(12)
+                    .quantityToBrew(200)
+                    .price(new BigDecimal("11.95"))
+                    .upc(BEER_2_UPC)
+                    .build());
+
+            beerRepository.save(Beer.builder()
+                    .beerName("No Hammers On The Bar")
+                    .beerStyle(BeerStyleEnum.PALE_ALE.name())
+                    .minOnHand(12)
+                    .quantityToBrew(200)
+                    .price(new BigDecimal("11.95"))
+                    .upc(BEER_3_UPC)
+                    .build());
+        }
     }
 }
