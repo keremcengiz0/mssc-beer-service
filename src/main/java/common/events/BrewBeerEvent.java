@@ -1,4 +1,4 @@
-package com.keremcengiz0.msscbeerservice.events;
+package common.events;
 
 import com.keremcengiz0.msscbeerservice.web.model.BeerDto;
 import lombok.NoArgsConstructor;
