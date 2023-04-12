@@ -1,4 +1,4 @@
-package com.keremcengiz0.msscbeerservice.web.model;
+package com.keremcengiz0.brewery.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

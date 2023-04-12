@@ -1,7 +1,7 @@
 package com.keremcengiz0.msscbeerservice.services.brewing;
 
 import com.keremcengiz0.msscbeerservice.domain.Beer;
-import common.events.BrewBeerEvent;
+import com.keremcengiz0.brewery.model.events.BrewBeerEvent;
 import com.keremcengiz0.msscbeerservice.repositories.BeerRepository;
 import com.keremcengiz0.msscbeerservice.services.inventory.BeerInventoryService;
 import com.keremcengiz0.msscbeerservice.web.mappers.BeerMapper;

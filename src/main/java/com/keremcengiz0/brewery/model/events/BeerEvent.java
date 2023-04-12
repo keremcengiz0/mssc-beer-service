@@ -1,6 +1,6 @@
-package common.events;
+package com.keremcengiz0.brewery.model.events;
 
-import com.keremcengiz0.msscbeerservice.web.model.BeerDto;
+import com.keremcengiz0.brewery.model.BeerDto;
 import lombok.*;
 
 import java.io.Serializable;

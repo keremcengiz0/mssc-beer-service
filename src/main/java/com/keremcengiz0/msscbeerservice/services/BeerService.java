@@ -1,8 +1,8 @@
 package com.keremcengiz0.msscbeerservice.services;
 
-import com.keremcengiz0.msscbeerservice.web.model.BeerDto;
-import com.keremcengiz0.msscbeerservice.web.model.BeerPagedList;
-import com.keremcengiz0.msscbeerservice.web.model.BeerStyleEnum;
+import com.keremcengiz0.brewery.model.BeerDto;
+import com.keremcengiz0.brewery.model.BeerPagedList;
+import com.keremcengiz0.brewery.model.BeerStyleEnum;
 import org.springframework.data.domain.PageRequest;
 
 import java.util.UUID;
